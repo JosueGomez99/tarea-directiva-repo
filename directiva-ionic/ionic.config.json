@@ -1,0 +1,7 @@
+{
+  "name": "directiva-ionic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
