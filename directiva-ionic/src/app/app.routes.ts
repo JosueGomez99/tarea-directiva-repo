@@ -13,6 +13,10 @@ export const routes: Routes = [
     path: 'segundo-caso',
     loadComponent: () => import('./segundo-caso/segundo-caso.component').then((m) => m.SegundoCasoComponent),
   },
+  {
+    path: 'tercer-caso',
+    loadComponent: () => import('./tercer-caso/tercer-caso.component').then((m) => m.TercerCasoComponent),
+  },
   
   {
     path: '',
