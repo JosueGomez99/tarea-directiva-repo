@@ -7,11 +7,11 @@ export const routes: Routes = [
   },
   {
     path: 'primer-caso',
-    loadChildren: () => import('./primer-caso/primer-caso.component').then((m) => m.PrimerCasoComponent),
+    loadComponent: () => import('./primer-caso/primer-caso.component').then((m) => m.PrimerCasoComponent),
   },
   {
     path: 'segundo-caso',
-    loadChildren: () => import('./segundo-caso/segundo-caso.component').then((m) => m.SegundoCasoComponent),
+    loadComponent: () => import('./segundo-caso/segundo-caso.component').then((m) => m.SegundoCasoComponent),
   },
   
   {

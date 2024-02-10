@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonButton,IonContent,IonLabel,IonItem } from '@ionic/angular/standalone'
 
+
 @Component({
   selector: 'app-primer-caso',
   templateUrl: './primer-caso.component.html',
