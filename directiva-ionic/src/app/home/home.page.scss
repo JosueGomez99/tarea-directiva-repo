@@ -1,27 +1,22 @@
-#container {
-  text-align: center;
+ion-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; // Ajusta la altura del contenido al 100% de la altura de la ventana
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
+  ion-button {
+    margin: 10px; // Espacio entre los botones
+    width: calc(50% - 20px); // Ancho del botón (50% del contenedor menos el margen)
+  }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
+  @media (min-width: 600px) {
+    // Cambios en la disposición cuando el ancho de la pantalla es mayor o igual a 600px
+    flex-direction: row; // Cambia a una disposición de fila
+    flex-wrap: wrap; // Permite que los elementos se envuelvan en varias líneas si es necesario
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+    ion-button {
+      width: calc(33.33% - 20px); // Ancho del botón (33.33% del contenedor menos el margen)
+    }
+  }
 }
