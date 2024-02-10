@@ -17,6 +17,10 @@ export const routes: Routes = [
     path: 'tercer-caso',
     loadComponent: () => import('./tercer-caso/tercer-caso.component').then((m) => m.TercerCasoComponent),
   },
+  {
+    path: 'cuarto-caso',
+    loadComponent: () => import('./cuarto-caso/cuarto-caso.component').then((m) => m.CuartoCasoComponent),
+  },
   
   {
     path: '',

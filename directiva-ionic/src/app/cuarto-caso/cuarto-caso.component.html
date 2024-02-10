@@ -1,0 +1,7 @@
+
+
+<div [ngClass]="{'aprobado': valor >= 70, 'reprobado': valor < 70}">
+  La variable tiene un valor de: {{ valor }}
+</div>
+
+<button (click)="cambiarValor()">Cambiar Valor</button>
