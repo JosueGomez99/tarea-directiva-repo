@@ -2,13 +2,14 @@
 import { Component } from '@angular/core';
 import { NgSwitch,NgSwitchCase,CommonModule } from '@angular/common';
 import { IonContent,IonButton } from '@ionic/angular/standalone';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-sexto-caso',
   templateUrl: './sexto-caso.component.html',
   styleUrls: ['./sexto-caso.component.scss'],
   standalone:true,
-  imports:[IonContent,IonButton,NgSwitch,NgSwitchCase,CommonModule]
+  imports:[IonContent,IonButton,NgSwitch,NgSwitchCase,CommonModule,RouterLink]
 })
 export class SextoCasoComponent {
   colorButton: string = "primary"; // Se establece inicialmente en "primary"

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonButton,IonContent,IonLabel,IonItem } from '@ionic/angular/standalone'
+import { RouterLink } from '@angular/router';
 
 
 @Component({
@@ -8,7 +9,7 @@ import { IonButton,IonContent,IonLabel,IonItem } from '@ionic/angular/standalone
   templateUrl: './primer-caso.component.html',
   styleUrls: ['./primer-caso.component.scss'],
   standalone:true,
-  imports:[IonButton,IonContent,IonLabel,IonItem,CommonModule]
+  imports:[IonButton,IonContent,IonLabel,IonItem,CommonModule,RouterLink]
 })
 export class PrimerCasoComponent  implements OnInit {
   contador:number=0;
