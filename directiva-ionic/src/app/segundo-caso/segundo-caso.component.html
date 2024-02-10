@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Lista de Imágenes de Animales
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let imageUrl of animalImages">
+      <ion-thumbnail slot="start">
+        <img [src]="imageUrl" alt="Animal">
+      </ion-thumbnail>
+    </ion-item>
+  </ion-list>
+</ion-content>
