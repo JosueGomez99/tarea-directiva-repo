@@ -10,4 +10,13 @@ export const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full',
   },
+  {
+    path: 'primer-caso',
+    loadComponent: () => import('./primer-caso/primer-caso.component').then((m) => m.PrimerCasoComponent),
+  },
+  {
+    path: '',
+    redirectTo: 'primer-caso',
+    pathMatch: 'full',
+  },
 ];

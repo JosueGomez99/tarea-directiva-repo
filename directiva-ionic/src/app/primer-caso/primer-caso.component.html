@@ -1,0 +1,11 @@
+<ion-content>
+  <ion-button (click)="sumar()">Sumar</ion-button>
+  <ion-label class="contador">{{ clics }}</ion-label>
+  
+  <ion-item *ngIf="contador >= 18">
+    <ion-label>Felicidades, ya eres mayor de edad</ion-label>
+  </ion-item>
+  
+  <!-- Mostrar el contador de clics con el color blanco -->
+  
+</ion-content>
