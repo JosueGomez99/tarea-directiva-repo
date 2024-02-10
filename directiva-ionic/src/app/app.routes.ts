@@ -25,6 +25,10 @@ export const routes: Routes = [
     path: 'quinto-caso',
     loadComponent: () => import('./quinto-caso/quinto-caso.component').then((m) => m.QuintoCasoComponent),
   },
+  {
+    path: 'sexto-caso',
+    loadComponent: () => import('./sexto-caso/sexto-caso.component').then((m) => m.SextoCasoComponent),
+  },
   
   
   {
